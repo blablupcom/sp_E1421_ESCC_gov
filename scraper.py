@@ -118,7 +118,7 @@ for link in links:
             csvMth = convert_mth_strings(csvMth.upper())
             data.append([csvYr, csvMth, url])
     if '.csv' in url:
-        title = link.previousSibling
+        title = link.previousSibling.encode('utf-8')
         print title
         if ' to ' in title:
             csvYr = link.previousSibling.split(' ')[-3]
