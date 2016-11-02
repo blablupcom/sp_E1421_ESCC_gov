@@ -151,20 +151,7 @@ for block in blocks:
                 csvMth = convert_mth_strings(csvMth.upper())
                 data.append([csvYr, csvMth, url])
 
-        # if '.pdf' in url:
-        #     title = link.text
-        #     if ' to ' in title:
-        #         csvYr = title.split(' ')[-1]
-        #         if 'January to March' in title:
-        #             csvMth = 'Q1'
-        #         if 'April to June' in title:
-        #             csvMth = 'Q2'
-        #         if 'July to September' in title:
-        #             csvMth = 'Q3'
-        #         if 'October to December' in title:
-        #             csvMth = 'Q4'
-        #         csvMth = convert_mth_strings(csvMth.upper())
-        #         data.append([csvYr, csvMth, url])
+
 
 #### STORE DATA 1.0
 
@@ -186,5 +173,5 @@ if errors > 0:
     raise Exception("%d errors occurred during scrape." % errors)
 
 
-#### EOF
 
+#### EOF
